@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial Black', sans-serif;
+    margin: 0;
+    background-color: #e67e22;
+    margin: auto;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.botao-voltar {
+    text-align: center;
+    margin-top: -80px;
+    margin-bottom: 60px;
+}
+
+.voltar {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block
+}
+
+.voltar:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f3eee3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 30px;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0,1);
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 180px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.info {
+    flex: 1;
+    min-width: 150px;
+    padding-right: 10px;
+}
+
+.info h3 {
+    margin: 0 0 10px 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 750;
+    color: black;
+    font-family: sans-serif;
+    
+}
+
+.etiqueta {
+    background-color: #f2b820;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0,1);
+}
+
+.foto-lanche {
+    width: 220px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 20px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .grade {
+        grid-template-columns: 1fr;
+    }
+}
